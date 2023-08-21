@@ -1,0 +1,3 @@
+Image ROI(Region of Interest)
+
+Sometimes, you will have to play with certain regions of images. For eye detection in images, first face detection is done over the entire image. When a face is obtained, we select the face region alone and search for eyes 👀 inside it instead of searching the whole image. It improves accuracy (because eyes are always on faces 🥲 ) and performance (because we search in a small area).
