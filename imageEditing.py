@@ -1,8 +1,8 @@
 import cv2 as cv
 
-# img = cv.imread("Photos/park.jpg")
-img = cv.imread("images/girl1.webp")
-img = cv.resize(img,(int(img.shape[1]*0.5), int(img.shape[0]*0.5)), interpolation=cv.INTER_AREA)
+img = cv.imread("Photos/park.jpg")
+# img = cv.imread("images/girl1.webp")
+# img = cv.resize(img,(int(img.shape[1]*0.5), int(img.shape[0]*0.5)), interpolation=cv.INTER_AREA)
 
 cv.imshow("Picture", img)
 
