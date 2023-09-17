@@ -20,8 +20,8 @@ gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 # cv.imshow('Simple threshhold inverse', thresh_inv)
 
 # Adaptive Thresholding
-adapt_thresh = cv.adaptiveThreshold(gray, 255, cv.ADAPTIVE_THRESH_MEAN_C, cv.THRESH_BINARY_INV, 11, 7)
-# adapt_thresh = cv.adaptiveThreshold(gray, 255, cv.ADAPTIVE_THRESH_GAUSSIAN_C, cv.THRESH_BINARY_INV, 11, 3)
+# adapt_thresh = cv.adaptiveThreshold(gray, 255, cv.ADAPTIVE_THRESH_MEAN_C, cv.THRESH_BINARY, 11, 7)
+adapt_thresh = cv.adaptiveThreshold(gray, 255, cv.ADAPTIVE_THRESH_GAUSSIAN_C, cv.THRESH_BINARY_INV, 11, 3)
 cv.imshow('Adaptive Thresholding', adapt_thresh)
 
 cv.waitKey(0)

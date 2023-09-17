@@ -14,7 +14,7 @@ gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 # Laplacian
 lap = cv.Laplacian(gray, cv.CV_64F)
 lap = np.uint8(np.absolute(lap))
-cv.imshow('Laplacian', lap)
+# cv.imshow('Laplacian', lap)
 
 # Sobel
 sobelx = cv.Sobel(gray, cv.CV_64F, 1, 0)
